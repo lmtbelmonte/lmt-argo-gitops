@@ -4,7 +4,7 @@ kind: Kustomization
 
 resources:
   - openshift-gitops-ns.yaml
-  - openshift-gitops.yaml
+ # - openshift-gitops.yaml
   - openshift-gitops-subscription.yaml
   - openshift-gitops-operatorgroup.yaml
 
