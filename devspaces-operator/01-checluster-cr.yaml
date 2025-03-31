@@ -2,7 +2,7 @@
 kind: CheCluster
 metadata:
   name: devspaces
-  namespace: openshift-devspaces
+  namespace: openshift-operators
   annotations:
     argocd.argoproj.io/sync-options: SkipDryRunOnMissingResource=true
     argocd.argoproj.io/sync-wave: "3"
