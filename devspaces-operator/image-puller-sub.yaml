@@ -5,7 +5,7 @@ metadata:
     argocd.argoproj.io/sync-options: SkipDryRunOnMissingResource=true
     argocd.argoproj.io/sync-wave: "2"
   name: kubernetes-imagepuller-operator
-  namespace: openshift-operators
+  namespace: openshift-devspaces
 spec:
   channel: stable
   installPlanApproval: Automatic
