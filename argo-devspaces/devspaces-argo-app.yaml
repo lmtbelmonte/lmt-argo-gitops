@@ -9,7 +9,7 @@ spec:
     server: https://kubernetes.default.svc
   project: default
   source:
-    path: lmt-argo-gitops/devspaces-operator
+    path: devspaces-operator
     repoURL: https://github.com/lmtbelmonte/lmt-argo-gitops.git
     targetRevision: main
   syncPolicy:
