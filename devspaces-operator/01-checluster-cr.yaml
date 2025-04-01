@@ -16,27 +16,44 @@ spec:
     devWorkspace: {}
     devfileRegistry: {}
     imagePuller:
-      enable: true
-      spec: 
-        images: >-
-          registry.redhat.io/devspaces/udi-rhel8:3.16;registry.redhat.io/devspaces/idea-rhel8:3.16;registry.redhat.io/devspaces/code-rhel8:3.16;registry.redhat.io/devspaces/udi-rhel8:3.16
+      enable: false
+      spec: {}
     metrics:
       enable: true
-    pluginRegistry: {}
+    pluginRegistry:
+      openVSXURL: 'https://open-vsx.org'
   containerRegistry: {}
   devEnvironments:
+    startTimeoutSeconds: 300
+    security: {}
+    secondsOfRunBeforeIdling: -1
+    maxNumberOfWorkspacesPerUser: -1
     containerBuildConfiguration:
       openShiftSecurityContextConstraint: container-build
+    ignoredUnrecoverableEvents:
+      - FailedScheduling
+    maxNumberOfRunningWorkspacesPerUser: 3
+    deploymentStrategy: RollingUpdate
     defaultNamespace:
       autoProvision: true
       template: <username>-devspaces
-    maxNumberOfWorkspacesPerUser: 5
-    secondsOfInactivityBeforeIdling: 1800
-    secondsOfRunBeforeIdling: -1
-    security: {}
-    startTimeoutSeconds: 300
+    secondsOfInactivityBeforeIdling: 7200
     storage:
-      pvcStrategy: per-user
+      perUserStrategyPvcConfig:
+        claimSize: 10Gi
+ #      storageClass: managed-csi-encrypted-cmk
+        storageClass: managed-csi
+      perWorkspaceStrategyPvcConfig:
+        claimSize: 10Gi
+ #      storageClass: managed-csi-hdd
+        storageClass: managed-csi
+      pvcStrategy: per-workspace
+ #  tolerations:
+ #    - effect: NoSchedule
+ #      key: node-role.kubernetes.io/workerdev
+ #      operator: Exists
+    persistUserHome:
+      enabled: true
   gitServices: {}
   networking:
     auth:
