@@ -16,7 +16,7 @@ spec:
     devWorkspace: {}
     devfileRegistry:
       externalDevfileRegistries:
-        - url: "github.com/devfile-samples/devfile-sample-java-springboot-basic/blob/main/devfile.yaml" 
+        - url: "https://sample-devfileregistry-devfile-registry-openshift-operators.apps.wfd8c8b0.eastus.aroapp.io/" 
     imagePuller:
       enable: false
       spec: {}
