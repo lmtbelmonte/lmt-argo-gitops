@@ -16,7 +16,7 @@ spec:
     devWorkspace: {}
     devfileRegistry:
       externalDevfileRegistries:
-        - url: "github.com/devfile-samples/devfile-sample-java-springboot-basic/blob/main/devfile.yaml" 
+        - url: "https://github.com/devfile-samples/devfile-sample-java-springboot-basic/blob/main/devfile.yaml" 
     imagePuller:
       enable: false
       spec: {}
