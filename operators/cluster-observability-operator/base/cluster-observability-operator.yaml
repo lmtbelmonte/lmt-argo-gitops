@@ -11,7 +11,7 @@ spec:
 apiVersion: operators.coreos.com/v1alpha1
 kind: Subscription
 metadata:
-  name: observability-operator-subscription
+  name: observability-operator
   namespace: openshift-logging
 spec:
   channel: development
