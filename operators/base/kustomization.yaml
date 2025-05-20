@@ -3,4 +3,4 @@ kind: Kustomization
 
 resources:
   - cluster-observability-operator.yaml
-  - logging-console-uiplugin.yml
+  - logging-console-uiplugin.yaml
