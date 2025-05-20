@@ -1,1 +1,20 @@
-
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: cluster-observability-gitops-app
+  namespace: openshift-gitops
+spec:
+  destination:
+    namespace: openshift-gitops
+    server: https://kubernetes.default.svc
+  project: default
+  source:
+    path: lmt-argo-gitops/overlays/cluster-observability/dev
+    repoURL: https://github.com/lmtbelmonte/lmt-argo-gitops.git
+    targetRevision: main
+  syncPolicy:
+    automated:
+      selfHeal: true
+      prune: true
+    syncOptions:
+    - CreateNamespace=true
