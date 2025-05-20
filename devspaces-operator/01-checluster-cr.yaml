@@ -14,10 +14,8 @@ spec:
     dashboard:
       logLevel: ERROR
     devWorkspace: {}
-    devfileRegistry:
-      externalDevfileRegistries:
-        - url: "https://github.com/devfile-samples/devfile-sample-java-springboot-basic/blob/main/devfile.yaml" 
-    imagePuller:
+    devfileRegistry: {}
+      imagePuller:
       enable: false
       spec: {}
     metrics:
