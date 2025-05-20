@@ -13,7 +13,7 @@ metadata:
   name: cluster-observability
   namespace: openshift-logging
 spec:
-  channel: stable
+  channel: development
   name: cluster-observability
   installPlanApproval: Automatic
   source: redhat-operators
