@@ -9,7 +9,7 @@ spec:
     server: https://kubernetes.default.svc
   project: default
   source:
-    path: overlays/loki-operator/dev
+    path: overlays/loki/dev
     repoURL: https://github.com/lmtbelmonte/lmt-argo-gitops.git
     targetRevision: main
   syncPolicy:
