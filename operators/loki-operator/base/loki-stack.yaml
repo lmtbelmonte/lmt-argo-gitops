@@ -12,6 +12,6 @@ spec:
     secret:
       name: logging-loki-azure
       type: azure
-    storageClassName: managed-csi
+  storageClassName: managed-csi
   tenants:
     mode: openshift-logging
