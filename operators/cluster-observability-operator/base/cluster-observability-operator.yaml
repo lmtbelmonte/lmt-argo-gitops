@@ -14,7 +14,7 @@ metadata:
   namespace: openshift-logging
 spec:
   channel: development
-  name: cluster-observability-operator
+  name: observability-operator
   installPlanApproval: Automatic
   source: redhat-operators
   sourceNamespace: openshift-marketplace
