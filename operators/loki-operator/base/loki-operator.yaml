@@ -46,4 +46,4 @@ spec:
   channel: stable
   name: cluster-logging
   source: redhat-operators
-  sourceNamespace: openshift-m
+  sourceNamespace: openshift-marketplace
