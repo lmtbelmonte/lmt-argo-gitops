@@ -4,7 +4,7 @@ metadata:
   name: observability-ui-plugin-rolebinding
 subjects:
   - kind: ServiceAccount
-    name: "system:serviceaccount:openshift-gitops:openshift-gitops-argocd-application-controller"
+    name: openshift-gitops-argocd-application-controller
     apiGroup: rbac.authorization.k8s.io
 roleRef:
   kind: ClusterRole
