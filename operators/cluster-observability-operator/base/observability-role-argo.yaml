@@ -1,23 +1,12 @@
 apiVersion: rbac.authorization.k8s.io/v1
-kind: Role
-metadata:
-  name: observability-ui-plugin-role
-  namespace: openshift-logging
-rules:
-  - apiGroups: ["observability.openshift.io"]
-    resources: ["uiplugins"]
-    verbs: ["get", "list", "watch"]
----
-apiVersion: rbac.authorization.k8s.io/v1
-kind: RoleBinding
+kind: ClusterRoleBinding
 metadata:
   name: observability-ui-plugin-rolebinding
-  namespace: openshift-logging
 subjects:
   - kind: ServiceAccount
     name: "system:serviceaccount:openshift-gitops:openshift-gitops-argocd-application-controller"
     apiGroup: rbac.authorization.k8s.io
 roleRef:
-  kind: Role
-  name: observability-ui-plugin-role
+  kind: ClusterRole
+  name: uiplugins.observability.openshift.io-v1alpha1-admin
   apiGroup: rbac.authorization.k8s.io
