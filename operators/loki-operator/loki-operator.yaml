@@ -13,7 +13,7 @@ metadata:
   name: loki-operator
   namespace: openshift-operators-redhat
 spec:
-  channel: stable
+  channel: stable-6.0
   name: loki-operator
   source: redhat-operators
   sourceNamespace: openshift-marketplace
@@ -32,7 +32,7 @@ apiVersion: operators.coreos.com/v1
 kind: OperatorGroup
 metadata:
   name: cluster-logging
-  namespace: openshift-logging 1
+  namespace: openshift-logging
 spec:
   targetNamespaces:
   - openshift-logging
@@ -43,7 +43,7 @@ metadata:
   name: cluster-logging
   namespace: openshift-logging
 spec:
-  channel: stable 2
+  channel: stable
   name: cluster-logging
   source: redhat-operators
   sourceNamespace: openshift-marketplace
