@@ -3,6 +3,9 @@ kind: OperatorGroup
 metadata:
  name: observability-operator
  namespace: openshift-logging
+spec:
+  targetNamespaces:
+  - openshift-logging
 ---
 apiVersion: operators.coreos.com/v1alpha1
 kind: Subscription
