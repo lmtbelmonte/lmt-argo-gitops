@@ -1,7 +1,7 @@
 plaapiVersion: operators.coreos.com/v1
 kind: OperatorGroup
 metadata:
- name: cluster-observability-operator
+ name: observability-operator
  namespace: openshift-logging
 spec:
   targetNamespaces:
