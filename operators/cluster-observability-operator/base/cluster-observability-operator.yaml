@@ -1,4 +1,4 @@
-apiVersion: operators.coreos.com/v1
+plaapiVersion: operators.coreos.com/v1
 kind: OperatorGroup
 metadata:
  name: cluster-observability-operator
@@ -10,8 +10,8 @@ spec:
 apiVersion: operators.coreos.com/v1alpha1
 kind: Subscription
 metadata:
-  name: observability-operator
-  namespace: openshift-logging
+  name: cluster-observability-operator
+  namespace: openshift-marketplace
 spec:
   channel: development
   name: cluster-observability-operator
