@@ -4,4 +4,5 @@ kind: Kustomization
 resources:
   - loki-operator.yaml
   - loki-role-argo.yaml
+  - loki-secret-logging-azure.yaml
   - loki-stack.yaml
