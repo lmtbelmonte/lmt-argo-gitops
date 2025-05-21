@@ -3,5 +3,5 @@ kind: Kustomization
 
 resources:
   - cluster-observability-operator.yaml
-  #- observability-role-argo.yaml
+  - observability-role-argo.yaml
   - logging-console-uiplugin.yaml
