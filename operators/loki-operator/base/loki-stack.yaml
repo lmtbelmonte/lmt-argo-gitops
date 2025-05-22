@@ -4,14 +4,18 @@ metadata:
   name: logging-loki
   namespace: openshift-logging
 spec:
+  managementState: Managed
   size: 1x.small
   storage:
     schemas:
-    - version: v13
-      effectiveDate: "2022-06-01"
+      - version: v13
+        effectiveDate: '2022-06-01'
     secret:
       name: logging-loki-azure
       type: azure
   storageClassName: managed-csi
+  template:
+    ingester:
+      replicas: 2
   tenants:
     mode: openshift-logging
