@@ -13,9 +13,9 @@ metadata:
   name: cluster-observability-operator
   namespace: openshift-logging
 spec:
-  channel: development
+  channel: stable
   name: cluster-observability-operator
   installPlanApproval: Automatic
   source: redhat-operators
   sourceNamespace: openshift-marketplace
-  startingCSV: cluster-observability-operator.0.4.1
+  startingCSV: cluster-observability-operator.v1.1.1
