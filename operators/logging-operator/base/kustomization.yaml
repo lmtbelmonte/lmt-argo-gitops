@@ -3,11 +3,9 @@ kind: Kustomization
 
 resources:
   - logging-operator.yaml
+  - logging-enable-console-plugin.yaml
   - logging-log-forwarder.yaml
   - logging-clusterRole-binding.yaml
- # - logging-loki-ingester-reclaimjob-0.yaml
- # - logging-loki-ingester-reclaimjob-1.yaml
-  - logging-enable-console-plugin.yaml
   - logging-uiplugin.yaml
   - lfme-instance.yaml
   
