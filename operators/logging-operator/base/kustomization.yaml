@@ -3,9 +3,9 @@ kind: Kustomization
 
 resources:
   - logging-operator.yaml
+  - logging-sa-collector.yaml
+  - logging-clusterRole-binding.yaml
   - logging-enable-console-plugin.yaml
   - logging-log-forwarder.yaml
-  - logging-clusterRole-binding.yaml
   - logging-uiplugin.yaml
-  - lfme-instance.yaml
   
