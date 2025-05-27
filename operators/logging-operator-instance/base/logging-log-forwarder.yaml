@@ -11,7 +11,7 @@ metadata:
 spec:
   managementState: Managed
   serviceAccount:
-    name: collector
+    name: cluster-logging-operator
   collector:
     resources:
       requests:
