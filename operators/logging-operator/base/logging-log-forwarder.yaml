@@ -4,6 +4,8 @@ kind: ClusterLogForwarder
 metadata:
   annotations:
     argocd.argoproj.io/sync-options: SkipDryRunOnMissingResource=true
+  labels:
+    app.kubernetes.io/instance: logging-operator-app  
   name: collector
   namespace: openshift-logging
 spec:
