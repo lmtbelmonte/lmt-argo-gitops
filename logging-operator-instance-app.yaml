@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: logging-operator-app
+  name: logging-operator-instance-app
   namespace: openshift-gitops
 spec:
   destination:
@@ -9,9 +9,9 @@ spec:
     server: https://kubernetes.default.svc
   project: default
   source:
-    path: overlays/logging-operator/dev
+    path: overlays/logging-operator-instance/dev
     repoURL: https://github.com/lmtbelmonte/lmt-argo-gitops.git
-    targetRevision: main
+    targetRevision: logging-instance
   syncPolicy:
     automated:
       selfHeal: true
