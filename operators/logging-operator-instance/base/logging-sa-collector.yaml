@@ -1,0 +1,8 @@
+kind: ServiceAccount
+apiVersion: v1
+metadata:
+  name: collector
+  labels:
+    app.kubernetes.io/instance: logging-operator-instance-app
+    operators.coreos.com/cluster-logging.openshift-logging: ''
+  namespace: openshift-logging

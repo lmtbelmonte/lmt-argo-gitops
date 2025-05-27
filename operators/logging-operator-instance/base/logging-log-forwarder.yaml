@@ -5,13 +5,13 @@ metadata:
   annotations:
     argocd.argoproj.io/sync-options: SkipDryRunOnMissingResource=true
   labels:
-    app.kubernetes.io/instance: logging-operator-app  
+    app.kubernetes.io/instance: logging-operator-instance-app  
   name: collector
   namespace: openshift-logging
 spec:
   managementState: Managed
   serviceAccount:
-    name: collector
+    name: cluster-logging-operator
   collector:
     resources:
       requests:
