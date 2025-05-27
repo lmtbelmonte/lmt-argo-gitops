@@ -11,7 +11,7 @@ spec:
   source:
     path: overlays/logging-operator-instance/dev
     repoURL: https://github.com/lmtbelmonte/lmt-argo-gitops.git
-    targetRevision: logging-instance
+    targetRevision: main
   syncPolicy:
     automated:
       selfHeal: true
