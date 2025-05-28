@@ -16,6 +16,7 @@ spec:
   channel: stable-6.0
   name: loki-operator
   source: redhat-operators
+  installPlanApproval: Automatic
   sourceNamespace: openshift-marketplace
 ---
 apiVersion: v1
