@@ -2,6 +2,8 @@ apiVersion: observability.openshift.io/v1alpha1
 kind: UIPlugin
 metadata:
   name: logging
+  labels:
+    app.kubernetes.io/instance: cluster-observability-app
 spec:
   logging:
     lokiStack:

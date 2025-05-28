@@ -6,5 +6,5 @@ resources:
   - logging-log-forwarder.yaml
   - logging-clusterRole-binding.yaml
   - logging-enable-console-plugin.yaml
-  - logging-uiplugin.yaml
+  #- logging-uiplugin.yaml
   
