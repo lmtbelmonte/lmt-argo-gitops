@@ -2,9 +2,8 @@ apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 
 resources:
- # - logging-sa-collector.yaml
+  #- logging-servicea-collector.yaml
   - logging-log-forwarder.yaml
   - logging-clusterRole-binding.yaml
   - logging-enable-console-plugin.yaml
   #- logging-uiplugin.yaml
-  

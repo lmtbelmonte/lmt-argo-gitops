@@ -13,8 +13,8 @@ spec:
     repoURL: https://github.com/lmtbelmonte/lmt-argo-gitops.git
     targetRevision: main
   syncPolicy:
-    automated:
-      selfHeal: true
-      prune: true
+    #automated:
+    #  selfHeal: true
+    #  prune: true
     syncOptions:
     - CreateNamespace=true
